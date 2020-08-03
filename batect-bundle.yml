@@ -1,0 +1,16 @@
+containers:
+  hadolint:
+    image: hadolint/hadolint:v1.18.0
+    volumes:
+      - local: <{batect.project_directory}
+        container: /code
+        options: ro
+    working_directory: /code
+
+tasks:
+  lint:docker:
+    description: Lint Dockerfiles.
+    group: Linting tasks
+    run:
+      container: hadolint
+      command: sh -c "hadolint $(find . -name Dockerfile)"
