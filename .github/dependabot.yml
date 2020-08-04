@@ -6,5 +6,10 @@ updates:
   - package-ecosystem: docker
     schedule:
       interval: daily
+    directory: .batect/hadolint
+    open-pull-requests-limit: 10
+  - package-ecosystem: docker
+    schedule:
+      interval: daily
     directory: .batect/yamllint
     open-pull-requests-limit: 10

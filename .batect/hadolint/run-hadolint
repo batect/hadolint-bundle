@@ -1,0 +1,12 @@
+#! /usr/bin/env bash
+
+set -euo pipefail
+
+readarray -d '' FILES < <(find . -name 'Dockerfile' -print0)
+
+if [ ${#FILES[@]} -eq 0 ]; then
+  echo "No Dockerfiles found."
+  exit 0
+fi
+
+hadolint "${FILES[@]}"
