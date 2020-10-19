@@ -1,4 +1,4 @@
-FROM hadolint/hadolint:v1.18.0
+FROM hadolint/hadolint:v1.18.1
 
 RUN apk add --no-cache bash=5.0.17-r0
 
