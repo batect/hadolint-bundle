@@ -3,7 +3,7 @@
 [![Build Status](https://img.shields.io/github/workflow/status/batect/hadolint-bundle/Pipeline/master)](https://github.com/batect/hadolint-bundle/actions?query=workflow%3APipeline+branch%3Amaster)
 [![License](https://img.shields.io/github/license/batect/hadolint-bundle.svg)](https://opensource.org/licenses/Apache-2.0)
 
-A bundle for [batect](https://batect.dev) that provides a task to lint Dockerfiles with [Hadolint](https://github.com/hadolint/hadolint).
+A bundle for [Batect](https://batect.dev) that provides a task to lint Dockerfiles with [Hadolint](https://github.com/hadolint/hadolint).
 
 ## Usage
 
