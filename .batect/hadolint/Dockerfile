@@ -1,4 +1,4 @@
-FROM hadolint/hadolint:v2.10.0-alpine@sha256:588dc410f08b4dbbf5fa94f9d0c6b4baaf4216815d5adfce9ceb306af61c7cce
+FROM hadolint/hadolint:v2.12.0-alpine@sha256:3c206a451cec6d486367e758645269fd7d696c5ccb6ff59d8b03b0e45268a199
 
 RUN apk add --no-cache bash=5.1.16-r0
 
